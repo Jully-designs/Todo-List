@@ -162,9 +162,15 @@ i{
         padding: 3vh 2vw;
     }
     .list-container{
-        width: 95vw;
+        width: 96vw;
     }
     .task-input input{
         width: 86vw;
+    }
+    .list-items li{
+        width: 88vw;
+    }
+    .list-items li span{
+        width: 75vw;
     }
 }
