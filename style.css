@@ -43,7 +43,10 @@ body{
     color: #ffffff;
     font-weight: 400;
     font-size: 20px;
-    transition: all 1s linear;
+    -webkit-transition: background-color 1s linear;
+    -moz-transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+    transition: background-color 1s linear;
 }
 .task-input button:hover{
     background-color: #8f7373;
@@ -81,7 +84,10 @@ body{
     border-radius: 7px;
     border: none;
     color: #ffffff;
-    transition: all 1s linear;
+    -webkit-transition: background-color 1s linear;
+    -moz-transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+    transition: background-color 1s linear;
 }
 .clear .clear-btn:hover{
     background-color: #8f7373;
@@ -145,5 +151,20 @@ i{
     }
     .clear .clear-btn{
         width: 45vw;
+    }
+}
+@media (max-width: 375px){
+    .list-container h1{
+        margin: 0 5vw;
+    }
+    .todo-body{
+        margin: 8vh 0vw;
+        padding: 3vh 2vw;
+    }
+    .list-container{
+        width: 95vw;
+    }
+    .task-input input{
+        width: 86vw;
     }
 }
